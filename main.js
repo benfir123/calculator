@@ -69,11 +69,15 @@ function changeDisplay(e) {
             break;
         
         case 'operator-button':
-
+                
                 if (currentOperation && !shouldResetScreen) {
+                    if (currentOperation === '÷' && displayValue.textContent === '0') {
+                        alert("You can't divide by 0!")
+                        return;
+                    }
                     num2 = displayValue.textContent;
                     lastDisplayValue.textContent += `${num2}` + ' =';
-                    displayValue.textContent = operate(currentOperation, num1, num2);
+                    displayValue.textContent = roundResult(operate(currentOperation, num1, num2));
                 }
 
                 num1 = displayValue.textContent;
