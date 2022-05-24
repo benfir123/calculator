@@ -1,0 +1,116 @@
+body * {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.calculator-body {
+
+margin: 38px auto;
+width: 391px;
+height: 682px;
+display: flex;
+flex-direction: column;
+
+background: conic-gradient(from 101.14deg at 50% 50%, #8938AF -75.11deg, rgba(255, 211, 97, 0.802083) 71.25deg, rgba(222, 101, 84, 0) 176.25deg, #8938AF 284.89deg, rgba(255, 211, 97, 0.802083) 431.25deg);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 30px;
+border: whitesmoke 4px solid;
+
+}
+
+.button-container {
+    
+    border-radius: 30px;
+    width: 355px;
+    height: 536px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 18px;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.display {
+    width: 352px;
+    height: auto;
+    min-height: 115px;
+    margin: 18px 18px -4px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: black 2px solid;
+    }
+
+.last-operation {
+    padding: 20px 30px;
+    text-align: right;
+}
+
+.current-operation {
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 0px 30px;
+    text-align: right;
+    margin: 0px 0px 18px 0px;
+    word-wrap: break-word;
+}
+
+.delete-button {
+
+width: 169px;
+height: 87px;
+
+background: #FFFFFF;
+border-radius: 30px;
+}
+
+.clear-button {
+
+width: 170px;
+height: 87px;
+
+background: #FFFFFF;
+border-radius: 30px;
+
+}
+
+.digit-button {
+    width: 79px;
+    height: 87px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    }
+
+.operator-button {
+        width: 79px;
+        height: 87px;
+        background: #ccf3f7;
+        border-radius: 30px;
+        }
+.equal-button {
+            width: 79px;
+            height: 87px;
+            background: #FFFFFF;
+            border-radius: 30px;
+            }
+
+.decimal-button {
+                width: 79px;
+                height: 87px;
+                background: #FFFFFF;
+                border-radius: 30px;
+                }
+
+button {
+    border: black 2px solid;
+    font-size: large;
+}
+
+button:hover {
+    filter: contrast(85%);
+    cursor: pointer;
+}
+
+button:active {
+    filter: contrast(65%);
+}
